@@ -1,14 +1,14 @@
-CODE USED FOR THE PUBLICATION 
-Fast Bayesian spectral analysis using Convolutional Neural Networks: Applications over GONG Hα solar data, FROM ASTRONOMY AND ASTROPHYSICS
+Code used in the publication
+Fast Bayesian spectral analysis using Convolutional Neural Networks: Applications over GONG Hα solar data
+published in Astronomy & Astrophysics
 
 
-THE RAW/PROCESSED DATA IS AVAILABLE UPON REQUEST DUE TO THE BIG SIZE OF THE FILES
-IF ANY SCRIPT GIVES AN ERROR REPORT IT AND I WILL FIX IT AS SOON AS POSSIBLE, THERE MAY BE SOME PROBLEMS
+The data used for this work is available upon request, it has not been uploaded to the size.
+This repository is still a work in progress and will be improved and expanded.
 
 
+The CNN and its weights are available in the CNN folder.
+Use the standard model loading and weight loading from Tensorflow to use it.
 
-IF YOU ARE ONLY INTERESTED IN USING THE CNN, JUST IMPORT THE MODEL WITH TENSORFLOW AND LOAD THE WEIGHTS AVAILABLE.
-DEPENDEING ON THE NATURE/STATISTICS OF YOUR DATA YOU MAY NEED TO RE-TRAIN THE MODEL. 
-I RECOMMEND NOT USING train.py FILE and WRITING YOU OWN
 
-THIS REPO IS STILL WORK IN PROGRESS
+You can install all dependencies used for this work using the requirements.txt file.
