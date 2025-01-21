@@ -12,17 +12,18 @@ import sys
 import time
 
 print('Libraries loaded')
+
+# Day of data
+day = sys.argv[1]
+
 # Define the path to save the synthetic data
-path = '/home/guillem/20140101_99_synth'
+path = f'./{day}_99_synth'
 
 # Define the frequency range
 frequency = np.linspace(1/(1440*60), 1/120, 2000, dtype=np.float32)
 
-# List of days
-day = sys.argv[1]
-
 # Define the path to the original data
-original_data_path = f'/mnt/10Tb/GONG_data/2014/201401/{day}/updated/'
+original_data_path = f'./{day}/updated/'
 
 print('Loading periodogram data')
 # Read the data from the HDF5 file

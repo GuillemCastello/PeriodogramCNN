@@ -24,7 +24,7 @@ year = sys.argv[1]
 month = sys.argv[2]
 day = sys.argv[3]
 
-directory_of_data = f'/home/guillem/{day}/updated/'
+directory_of_data = f'./{day}/updated/'
 files_updated = sorted(glob.glob(directory_of_data+'*.fits'))
 
 data_cube_file = f'{directory_of_data}{day}_data.h5'

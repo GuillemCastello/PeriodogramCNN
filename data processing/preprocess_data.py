@@ -2,13 +2,11 @@ import numpy as np
 import glob
 from tqdm import tqdm
 from multiprocessing import Pool
-import itertools
 import time as t
 import os
 from file_size_filter import *
 from create_list_files_day import *
 from limb_darkening import remove_limb_darkening
-from adjust_intensity import remove_out_of_disk #, median_adjust_intensity
 from fits_utils import open_fits_file, open_fits_fz_file, save_fits_file
 import sys
 
