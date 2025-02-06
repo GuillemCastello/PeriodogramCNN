@@ -42,8 +42,8 @@ hann_window = hann_window[:, None, None]
 # Define the x and y ranges
 
 
-temporal_sequence = (time_series - np.mean(time_series, axis=0)) / np.mean(time_series, axis=0)
-temporal_sequence = temporal_sequence * hann_window
+#temporal_sequence = time_series #- np.mean(time_series, axis=0)) / np.mean(time_series, axis=0)
+temporal_sequence = time_series * hann_window
 
 time_series = None  # Free memory
 # Define the periodograms array
