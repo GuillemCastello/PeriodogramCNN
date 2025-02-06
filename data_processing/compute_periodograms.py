@@ -20,7 +20,7 @@ day = sys.argv[3]
 njobs = sys.argv[4]
 
 # Define the path to the original data
-original_data_path = f'./{day}/updated/'
+original_data_path = f'/home/guillem/{day}/updated/'
 print(f'Data is in directory {original_data_path} \n')
 
 # Read the data from the HDF5 file
