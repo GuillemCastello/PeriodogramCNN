@@ -24,7 +24,7 @@ month = sys.argv[2]
 day = sys.argv[3]
 n_threads = sys.argv[4]
 
-directory_of_data = f'./{day}/updated/'
+directory_of_data = f'/home/guillem/{day}/updated/'
 files_updated = sorted(glob.glob(directory_of_data+'*.fits'))
 
 change_telescope_indices = []
