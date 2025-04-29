@@ -38,7 +38,7 @@ Open these with Jupyter:
 jupyter notebook psd_analysis.ipynb
 ```
 
-## CNN
+## 🤖 CNN
 
 1. The CNN weights presented in Castelló et al. (2025) for both models are present CNN/*/*Weights.h5
 2. Load your models using tensorflow with the usual routines and you are ready to go to eprform inference.
