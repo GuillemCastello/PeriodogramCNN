@@ -4,7 +4,6 @@ A simple Python project to process solar telescope data, look at how image brigh
 
 ## 📋 Features
 
-- **Download data**: Get GONG H‑alpha FITS files using a provided script.
 - **Preprocess images**: Remove limb darkening (the Sun appears darker at its edges) and filter out bad frames.
 - **Make maps**: Turn FITS files into 2D maps of the solar disk and plot them.
 - **Analyze periodograms**: Compute power versus frequency (periodogram) and fit a simple noise model.
@@ -22,37 +21,12 @@ A simple Python project to process solar telescope data, look at how image brigh
    pip install -r requirements.txt
    ```
 
-## 📥 Downloading Data
-
-A script to grab example FITS files is in the `data/` folder. To download sample data:
-```bash
-bash data/download_gong_halpha_fits_ata.sh
-```
-This will save files under `data/` by date.
-
 ## 🔄 Data Processing
-
-1. Open `data_processing/preprocess_data.py` and set:
-   - `day` to the date folder name (e.g., `20140125`).
-   - `directory_of_data` to where your `.fits.fz` files live (e.g., `/home/user/20140125/`).
-2. Run preprocessing for one day:
-   ```bash
-   python data_processing/preprocess_data.py <num_processes>
-   ```
-   Processed files go into an `updated/` subfolder.
-
-3. To batch-process many days, use:
+1. Run preprocessing for one day:
    ```bash
    bash preprocess_multiple_days.sh
    ```
-
-## 🗺️ Mapping
-
-Inside `data_processing/mapping/` you'll find scripts to turn FITS images into solar disk maps:
-- `fits2map.py`: read FITS data into arrays.
-- `make_map.py`: build and save map files.
-- `plot_map.py`: display map images.
-- Additional utilities for coordinate transforms and plotting.
+   Change day and ncores as needed, your data should be isnide the data folder
 
 ## 📊 Analysis Notebooks
 
@@ -64,7 +38,12 @@ Open these with Jupyter:
 jupyter notebook psd_analysis.ipynb
 ```
 
-## 🤖 Training the CNN
+## CNN
+
+1. The CNN weights presented in Castelló et al. (2025) for both models are present CNN/*/*Weights.h5
+2. Load your models using tensorflow with the usual routines and you are ready to go to eprform inference.
+
+## 🤖 Training the CNN (if needed)
 
 1. Go to the `CNN/` folder:
    ```bash
